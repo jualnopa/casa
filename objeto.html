@@ -1,0 +1,71 @@
+
+
+/* CLASE mascota {
+	PROPIEDADES (variables)
+		- cabeza
+		- patas
+		- cola
+
+	METODOS (funciones)
+		- camina
+		- corre
+		- come	
+}
+
+     OBJETO GATO UNO {
+	cabeza: grande
+	patas: largas
+	cola: pequena
+
+	camina: rápido
+	corre: largas distancias
+	come: comida especial
+}
+
+     OBJETO GATO DOS {
+	cabeza: pequena
+	patas: cortas
+	cola: larga
+
+	camina: lento
+	corre: no
+	come: cualquier comida 
+}
+
+
+mostrar gato uno >  cómo es su cabeza //  EL GATO 1 , MUESTRAME SU CABEZA
+
+*/
+
+
+// CREAR UNA CLASE
+
+	class miClase{
+		constructor (primero, segundo) /* el constructor envía esas propiedades: el primero y el segundo */
+		{
+			this.uno = primero; // primera propiedad, la llamamos
+			this.dos = segundo; // segunda propiedad, también la llamamos
+			this.tres = "Hola a todos"; 
+		}
+	};
+
+	miMetodoUno(){
+		return this.uno;  // me devuelve el valor pero aún no sé donde si en la consola, document.write,....
+	};
+	
+
+	miMetodoDos(parametroUno, parametroDos){
+		document.write(  // aqui ya he decido que lo voy a mostrar en document.write
+        	"El parametro UNO es: " + parametroUno +
+        	<br> "El parametro DOS es: " + parametroDos +
+
+        	)
+	}
+	
+// CREAR UN OBJETO - instanciar un objeto 
+
+var objetoUno = new miClase ("Simba, 7777"); // instanciar un objeto
+
+// RECUPERAR DATOS QUE HEMOS SOLICITADO
+
+	document.write(objetoUno.uno);
